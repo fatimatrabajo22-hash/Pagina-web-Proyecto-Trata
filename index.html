@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -9,6 +8,17 @@
       body {
         background-color: pink; /* Fondo rosa */
         color: white;           /* Texto en blanco */
+        font-family: sans-serif;
+      }
+      .video-container {
+        margin-top: 20px;
+      }
+      .video-link {
+        margin-top: 15px;
+      }
+      .video-link a {
+        color: white;
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -16,5 +26,24 @@
     <h1>Hola, mundo</h1>
     <p>Este es el contenido visible de la página.</p>
     <h2>Fátima Rocha Perujo</h2>
+
+    <!-- Vídeo incrustado de YouTube -->
+    <div class="video-container">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/xU3DYkuB5G8" 
+        title="Reproductor de vídeo de YouTube" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Enlace al vídeo -->
+    <div class="video-link">
+      <p>Ver en YouTube: <a href="http://www.youtube.com/watch?v=xU3DYkuB5G8" target="_blank">¿Qué es la trata de personas?</a></p>
+    </div>
   </body>
 </html>
